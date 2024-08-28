@@ -3,13 +3,13 @@
     "id": 1,
     "title": "Kola",
     "price": 6,
-    "image": "https://ayb.akinoncdn.com/products/2019/01/18/3544/5aa1ee14-1c83-4213-a62b-773c4785e187_size780x780_quality60_cropCenter.jpg"
+    "image": "https://shop.phoenixbev.mu/wp-content/uploads/products/1129-1.jpg"
   },
   {
     "id": 2,
     "title": "Fanta",
     "price": 5,
-    "image": "https://www.coca-cola.com.tr/content/dam/one/tr/tr/product-images/fanta-portakal_product_image.png"
+    "image": "https://cdn.shopify.com/s/files/1/2968/1670/products/exotic.jpg?v=1659720512"
   },
   {
     "id": 3,
@@ -25,15 +25,15 @@
   },
   {
     "id": 5,
-    "title": "Şalgam",
+    "title": "Pepsi",
     "price": 4,
-    "image": "http://esenlik.com.tr//images/prod/5704.jpg"
+    "image": "https://126031625.cdn6.editmysite.com/uploads/1/2/6/0/126031625/s102803073416772269_p189_i1_w10000.png?width=2560"
   },
   {
     "id": 6,
     "title": "Limonata",
     "price": 7,
-    "image": "https://reimg-carrefour.mncdn.com/mnresize/600/600/productimage/30126394/30126394_0_MC/8797156769842_1575630492802.jpg"
+    "image": "https://img.freepik.com/premium-photo/glass-lemonade-with-straw-piece-lemon-isolated-white-background_124717-829.jpg"
   },
   {
     "id": 7,
@@ -51,13 +51,13 @@
     "id": 9,
     "title": "Soda",
     "price": 4,
-    "image": "http://esenlik.com.tr//images/prod/2928.jpg"
+    "image": "https://m.media-amazon.com/images/I/61uwH13gLkL.jpg"
   },
   {
     "id": 10,
     "title": "Playstation 5",
     "price": 10000,
-    "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/sony/thumb/TeoriV2-108445-1_large.jpg"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnIwY2c_pLXybmoSDikwCF6hehjs0xb6UzQ&s"
   },
   {
     "id": 11,
@@ -69,7 +69,7 @@
     "id": 12,
     "title": "Lüx Kol Saati",
     "price": 25000,
-    "image": "https://www.dogansaatcilik.com.tr/ProductImages/118687/big/seiko-ssc719p-erkek-kol-saati__0296960735052182.jpg"
+    "image": "https://www.metalsintime.com/wp-content/uploads/2023/06/500-04026.jpg"
   },
   {
     "id": 13,
@@ -118,25 +118,29 @@
     "title": "Ada",
     "price": 125000000,
     "image": "https://icdn.ensonhaber.com/resimler/galeri/1_11195.jpg"
-  },{
+  },
+  {
     "id": 22,
     "title": "Stadyum",
     "price": 2500000,
     "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2020/06/01/thumbs_b_c_dc24a18cc233bd960f410911f5d39bf2.jpg"
-  },{
+  },
+  {
     "id": 23,
     "title": "Bitcoin",
     "price": 60000,
     "image": "https://www.cumhuriyet.com.tr/Archive/2021/9/27/1872247/kapak_141123.jpg"
-  },{
+  },
+  {
     "id": 24,
     "title": "Air Jordan",
     "price": 2000,
-    "image": "https://www.sportinn.com.tr/images/jpeg/products/554724/ColorPhotos/092/554724_092_PHSLH001_800.jpg"
-  },{
+    "image": "https://c4.wallpaperflare.com/wallpaper/206/112/1023/jordan-themed-for-desktops-wallpaper-preview.jpg"
+  },
+  {
     "id": 25,
-    "title": "Messi Forması",
+    "title": "Messi Jersey",
     "price": 250,
-    "image": "https://st2.myideasoft.com/idea/fr/55/myassets/products/366/paris-saint-germain-cup-away-stadium-shirt-2021-22-kids-with-messi-30-printing-ss4-p-12087703-u-6v44pc9ht2ynaiyuv5uk-v-af3dfad2f9b44448a3068821419095db_min.jpg?revision=1628627354"
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9ea6fa4647874f21a81a7776868c536f_9366/Inter_Miami_CF_24-25_Messi_Home_Jersey_Kids_Pink_JE9743_02_laydown.jpg"
   }
 ]
