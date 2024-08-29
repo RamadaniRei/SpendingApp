@@ -1,14 +1,17 @@
 import React from "react";
 import CardItem from "./CardItem";
+import { useSelector } from "react-redux";
 
-const Card = ({ products, product, setBasket, basket, total, money }) => {
+const Card = ({ products, setBasket }) => {
+  const total = useSelector((state) => state.basket.total);
+  const basket = useSelector((state) => state.basket.basket);
+  const money = useSelector((state) => state.basket.money);
   return (
     <div className="card">
       {products.map((item) => (
         <CardItem
           key={item.id}
           basket={basket}
-          setBasket={setBasket}
           product={item}
           total={total}
           money={money}

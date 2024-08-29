@@ -1,58 +1,42 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem, removeItem } from "../redux/products/basketSlice";
 import { moneyFormat } from "../helpers";
 
-const CardItem = ({ product, basket, setBasket, total, money }) => {
-  const basketItem = basket.find((item) => item.id === product.id);
-  const addItem = () => {
-    const checkBasket = basket.find((item) => item.id === product.id);
-    if (checkBasket) {
-      checkBasket.amount += 1;
-      setBasket([
-        ...basket.filter((item) => item.id !== checkBasket.id),
-        checkBasket,
-      ]);
-    } else {
-      setBasket([
-        ...basket,
-        {
-          id: product.id,
-          amount: 1,
-          title: product.title,
-          price: product.price,
-        },
-      ]);
-    }
+const CardItem = ({ product }) => {
+  const dispatch = useDispatch();
+  const basket = useSelector((state) =>
+    state.basket.basket.find((item) => item.id === product.id)
+  );
+  const total = useSelector((state) => state.basket.total);
+  const money = useSelector((state) => state.basket.money);
+
+  const handleAddItem = () => {
+    dispatch(addItem(product));
   };
-  const removeItem = () => {
-    const currentBasket = basket.find((item) => item.id === product.id);
-    const basketWithoutCurrent = basket.filter(
-      (item) => item.id !== product.id
-    );
-    currentBasket.amount -= 1;
-    if (currentBasket.amount === 0) {
-      setBasket([...basketWithoutCurrent]);
-    } else {
-      setBasket([...basketWithoutCurrent, currentBasket]);
-    }
+
+  const handleRemoveItem = () => {
+    dispatch(removeItem(product));
   };
+
   return (
     <div className="card-item">
-      <img src={product.image} alt={`${product.title}`} />
+      <img src={product.image} alt={product.title} />
       <div className="card-text">
-        <h3> {product.title}</h3>
-        <h3> ${moneyFormat(product.price)} </h3>
+        <h3>{product.title}</h3>
+        <h3>${moneyFormat(product.price)}</h3>
       </div>
       <div className="actions">
         <button
-          onClick={removeItem}
+          onClick={handleRemoveItem}
           className="btn btn-sell"
-          disabled={!basketItem}
+          disabled={!basket}
         >
           Remove
         </button>
-        <span>{basketItem ? basketItem.amount : 0}</span>
+        <span>{basket ? basket.amount : 0}</span>
         <button
-          onClick={addItem}
+          onClick={handleAddItem}
           className="btn btn-buy"
           disabled={total + product.price > money}
         >
